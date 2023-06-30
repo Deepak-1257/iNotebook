@@ -10,7 +10,7 @@ const Signup = (props) => {
         const { name, email, password, cpassword } = credentials;
     if(password===cpassword)
     {
-          const response = await fetch("http://localhost:5000/api/auth/createuser", {
+          const response = await fetch("https://inotebook-backend-lz74.onrender.com/api/auth/createuser", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
